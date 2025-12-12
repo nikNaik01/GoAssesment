@@ -5,12 +5,13 @@ import "fmt"
 //Your code goes here
 
 type Rectangle struct {
-	Width  float64
-	Height float64
+	Width  float32
+	Height float32
 }
 
-func (r Rectangle) Area() float64 {
-	return r.Width * r.Height
+func (rect Rectangle) Area() float32 {
+	area := rect.Width * rect.Height
+	return area
 }
 
 // Do not change the code in the main function

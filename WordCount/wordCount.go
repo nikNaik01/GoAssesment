@@ -6,11 +6,11 @@ import (
 )
 
 func countWords(s string) map[string]int {
-	m := make(map[string]int)
-	for _, w := range strings.Fields(s) {
-		m[w]++
+	wordCountMap := make(map[string]int)
+	for _, word := range strings.Fields(s) {
+		wordCountMap[word]++
 	}
-	return m
+	return wordCountMap
 }
 
 // Do not change the code in the main function

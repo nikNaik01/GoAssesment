@@ -2,11 +2,11 @@ package main
 
 import "fmt"
 
-func swap(a, b *int) {
+func swap(x, y *int) {
 	//Your code goes here
-	temp := *a
-	*a = *b
-	*b = temp
+	temp := *x
+	*x = *y
+	*y = temp
 }
 
 // Do not change the code in the main function
